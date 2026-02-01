@@ -15,7 +15,6 @@ Out of scope:
 - Fiat payments, credit cards, KYC, real-world pricing guarantees
 - Complex seating maps, dynamic pricing, marketplace integrations
 
----
 ## 2. Definitions
 
 ### Ticket
@@ -42,8 +41,6 @@ An **event** is a record created by an organizer that defines:
 - ticket price per zone (in test ETH)
 - refund policy flags (optional)
 
----
-
 ## 3. Roles
 - **Organizer**: creates events, configures zones/supply/prices, can cancel event (if enabled)
 - **Buyer / Attendee**: buys tickets, holds tickets, optionally transfers tickets, presents ticket for check-in
@@ -51,7 +48,6 @@ An **event** is a record created by an organizer that defines:
 
 Wallet-based identity: all roles are represented by wallet addresses (MetaMask).
 
----
 
 ## 4. Actions & Rules
 ### A) Create Event
@@ -120,7 +116,6 @@ Two optional modes (choose one for implementation):
 
 Default if not implemented: no refunds; tickets remain valid until event start
 
----
 
 ## 5. Constraints
 - **Network:** Sepolia/Holesky or local only. No mainnet deployment.
@@ -131,8 +126,6 @@ Default if not implemented: no refunds; tickets remain valid until event start
   - prevent buying beyond supply
   - prevent unauthorized check-in (verifier authorization)
   - handle re-entrancy for payable/refund paths (implementation detail)
-
----
 
 ## 6. Minimal Acceptance Criteria
 - Create event with at least 2 zones and fixed supplies.
